@@ -1,0 +1,118 @@
+html,body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+
+img.R {
+	border: solid red 5px;
+}
+img.D {
+	border: solid blue 5px;
+}
+span.R {
+	color: red;
+	font-weight: bold;
+}
+span.D {
+	color: blue;
+	font-weight: bold;
+}
+.error {
+	color: red;
+	font-weight: bold;
+}
+
+
+div.bighead {
+	font-size: 2em;
+	border-top: solid red 5px;
+	border-bottom: solid red 5px;
+	color: white;
+	background-color: blue;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+}
+div.pagehead {
+	font-size: 1.8em;
+	font-weight: bold;
+	margin: 20px auto;
+	width: 280px;
+}
+
+p#geolocinfo {
+	margin-left: 30px;
+	margin-right: 30px;
+	font-size: 1.8em;
+	text-align: center;
+	border: solid black 1px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	
+}
+
+div.legislator {
+	width: 260px;
+	border: solid black 2px;
+	padding: 15px;
+	margin: 0px auto 25px auto;
+
+}
+
+div.legislator b {
+	font-size: 1.3em;
+
+}
+
+div.legislator img.profile {
+	float: right;
+	margin-top: 20px;
+	width: 36%;
+}
+
+div.legislator div.dirtymoneyavg {
+	margin: 0px auto;
+	padding: 0px;
+}
+div.legislator div.dirtymoneyavg p {
+	padding: 0px;
+	width: 130px;
+	margin: 0px;
+	font-weight: bold;
+	font-size: .8em;
+
+	position: relative;
+	left: 65px;
+	top: 8px;
+}
+div.legislator div.dirtymoneyavg img {
+	width: 300px;
+	position: relative;
+	right: 10px;
+}
+div.legislator div.position {
+	font-size: 10.5em;
+}
+
+div.legislator ul.money {
+	width: 100%;
+	float: left;
+	margin:0px;
+	padding: 0px;
+}
+
+div.legislator div.contact div.links {
+	padding-top: 25px;
+	height: 20px;
+	clear: both;
+	
+	width: 55%;
+	margin: 10px auto;
+	
+}
+div.legislator div.contact div.call {
+	padding-top: 15px;
+	font-size:1.4em;
+	font-weight: bold;
+}

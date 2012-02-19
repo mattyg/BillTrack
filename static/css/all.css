@@ -1,0 +1,291 @@
+html,body {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+ /*background-color: #BFE6F2;*/
+	background-color:white;
+}
+img.R {
+	border: solid red 5px;
+}
+img.D {
+	border: solid blue 5px;
+}
+span.R {
+	color: red;
+	font-weight: bold;
+}
+span.D {
+	color: blue;
+	font-weight: bold;
+}
+div.content {
+	max-width: 919px;
+	min-width: 280px;
+	margin: 0px auto 60px auto;
+}
+div.content strong {
+	padding-top: 15px;
+	font-size: 1.2em;
+	font-family: Verdana, Geneva, sans-serif;
+}
+div.content li {
+	padding-top: 8px;
+}
+div.bighead {
+	font-size: 2em;
+	border-top: solid #F53D00 2px;
+	border-bottom: solid #F53D00 2px;
+	color: white !important;
+	background-color: blue;
+	background: #ccc;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00B8F5), to(#008AB8));
+	background: -moz-linear-gradient(top,  #00B8F5,  #008AB8);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00B8F5', endColorstr='#008AB8');
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+}
+div.bighead a:link {
+	color: white !important;
+	text-decoration: none;
+}
+div.bighead a:visited {
+	color: white !important;
+	text-decoration: none;
+}
+div.bighead a:hover {
+	color: white !important;
+	text-decoration: underline;
+}
+div.bighead a:active {
+	color: white !important;
+	text-decoration: none;
+}
+div.pagehead {
+	font-size: 1.8em;
+	font-weight: bold;
+	margin: 20px auto;
+
+	max-width: 500px;
+	min-width: 280px;
+}
+
+p#geolocinfo {
+	margin-left: 30px;
+	margin-right: 30px;
+	font-size: 1.8em;
+	text-align: center;
+	border: solid black 1px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	
+}
+
+
+div.lookup {
+	font-size: 1em;
+	margin: 80px auto;
+	width: 280px;
+}
+div.message {
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 800px;
+	min-width: 280px;
+	font-family: Verdana, Geneva, sans-serif;
+	margin: 30px auto;
+	font-size: 1.1em;
+	color: black;
+	line-height: 1.8em;
+}
+div.message .main {
+	padding-bottom: 30px;
+}
+div.message .votes {
+	font-family: Verdana, Geneva, sans-serif;	
+}
+div.message .stop {
+	font-weight: bold;
+	font-size: 1.1em;
+	width: 700px;
+}
+div.message a {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #1196C2;
+}
+div.message a.button {
+	padding: 10px;
+	margin: 8px auto 8px 30px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #00B8F5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00B8F5), to(#008AB8));
+	background: -moz-linear-gradient(top,  #00B8F5,  #008AB8);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00B8F5', endColorstr='#008AB8');
+	display: block;
+	text-align: center;
+}
+
+div.message a.button:link {
+}
+div.message a.button:hover {
+ 	border: solid black 2px;
+}
+
+div.message p {
+	display: block;
+	clear: both;
+}
+div.message table {
+	margin-top: 55px;
+	font-size: 1.2em;
+}
+
+div.legislator {
+	padding: 15px 5px 15px 5px;
+	margin: 0px auto 25px auto;
+	border-bottom: solid black 2px;
+	width: 300px;
+}
+
+div.legislator a.name {
+	color: black;
+	font-size: 1.3em;
+	font-weight: bold;
+	font-family: Tahoma, Geneva, sans-serif;
+	
+}
+
+div.legislator a.name:link {
+	text-decoration: none;
+}
+div.legislator a.name:visited {
+	text-decoration: none;
+}
+div.legislator a.name:hover {
+	text-decoration: underline;
+}
+div.legislator a.name:visited {
+	text-decoration: none;
+}
+
+
+div.legislator img.profile {
+	float: right;
+	margin-top: 10px;
+	width: 100px;
+}
+
+div.legislator div.dirtymoneyavg {
+	margin: 0px auto;
+	padding: 0px;
+}
+div.legislator div.dirtymoneyavg p {
+	padding: 0px;
+	width: 210px;
+	margin: 0px;
+	font-weight: bold;
+	font-size: .8em;
+
+	position: relative;
+	left: 35px;
+	top: 15px;
+}
+div.legislator div.dirtymoneyavg img {
+	width: 310px;
+	position: relative;
+	top: 5px;
+	right: 10px;
+}
+div.legislator .position {
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: center;
+	width: 150px;
+}
+div.legislator .support {
+	margin-top: 30px;
+	font-size: 2.4em;
+	color: red;
+}
+div.legislator .oppose {
+	margin-top: 35px;
+	font-size: 2.4em;
+	color: green;
+}
+div.legislator .unknown {
+	margin-top: 20px;
+	color: black;
+	font-size: 8em;
+}
+
+div.legislator ul.money {
+	width: 100%;
+	float: left;
+	font-size: 1.1em;
+	padding: 0px;
+	list-style-type: none;
+	position: relative;
+	top: 15px;
+	display: block;
+	margin-bottom: 25px;
+
+}
+div.legislator ul.money li {
+	padding-top: 5px;
+
+}
+div.legislator ul.money li a {
+	color: #008AB8;
+	font-family: Verdana, Geneva, sans-serif;
+}
+div.legislator ul.money li span.R {
+	font-size: 1.1em;
+	padding-left: 6px;
+}
+div.legislator ul.money span.title {
+	font-weight: bold;
+	font-size: .76em;
+	font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+}
+div.legislator div.links {
+	height: 20px;
+	clear: both;
+	width: 55%;
+	margin: 20px auto;
+	
+	
+}
+div.legislator div.call {
+	clear: both;
+	margin-top: 15px;
+	font-size:1.4em;
+	font-weight: bold;
+}
+div.legislator div.call a{
+	font-family: Tahoma, Geneva, sans-serif;
+}
+div.footer {
+	border-top: solid black 1px;
+	width: 100%;
+	height: 37px;
+	background: #00B8F5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#008AB8), to(#00B8F5));
+	background: -moz-linear-gradient(top,  #008AB8,  #00B8F5);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008AB8', endColorstr='#00B8F5');
+}
+div.footer div.share {
+	width: 280px;
+	margin:  7px auto;
+}
+div.footer div.twitter {
+	float: right;
+	height: 20px;
+}
+div.footer .fb{
+	float: left;
+	height: 20px;
+}

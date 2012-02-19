@@ -1,0 +1,69 @@
+$def with (person, position, totalanti, totalpro, totalbig)
+$code:
+	if person.title == 'Rep':
+	    bill = 'HR 3811'
+	elif person.title == 'Sen':
+		bill = 'S 2041'
+
+	if position == 0:
+ 		position = 'Opposes '+bill
+		pclass = 'oppose'
+	elif position == 1:
+		position = 'Supports '+bill
+		pclass = 'support'
+	elif position == 2:
+		position = '?'
+		pclass = 'unknown'
+
+	if person.gender == 'M':
+		pronoun = 'him'
+	else:
+		pronoun = 'her'
+	dirtymoneyimg = "http://www.dirtyenergymoney.org/cache/summarychart/candidates/timeline/"+person.crp_id+".png"
+	img_url = 'http://bioguide.congress.gov/bioguide/photo/'+person.bioguide_id[0]+'/'+person.bioguide_id+'.jpg'
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Get $person.firstname $person.lastname to oppose Keystone XL.</title>
+		<link rel="stylesheet" type="text/css" href="/static/css/all.css" />
+	</head>
+	<body>
+		<div class="bighead"><a href="/">Keystone XL Watch</a></div>
+		<div class="legislator">
+			<a href="#" class="name">$person.title $person.firstname $person.lastname, <span class="$person.party">$person.party</span></a>
+			<img class="profile $person.party" src="$img_url" />
+			<div class="position $pclass">$position</div>
+			<ul class="money">
+				<b>Campaign contributions from 2010 - 2012</b>
+				<li><span class="R">$$$totalbig</span> from Big Oil & Gas</li>
+				<li><span class="R">$$$totalpro</span> from <a href="http://www.dirtyenergymoney.org/view.php?search=1&type=search&sitecode=carbon&can=$person.crp_id">all Pro KXL Groups</a></li>
+				<li><span class="R">$$$totalanti</span> from Environmental Groups</li>
+				<div class="dirtymoneyavg">	
+					<p>Dirty Energy Money</p>			
+					<a href="http://www.dirtyenergymoney.org/view.php?search=1&type=search&sitecode=carbon&can=$person.crp_id"><img class="dirtymoneyavg" src="$dirtymoneyimg" /></a>
+				</div>
+			</ul>
+			<div class="contact">
+				<div class="links">
+					<a href="$person.webform">Email</a>
+					<a href="http://twitter.com/$person.twitter_id">Tweet</a>
+					<a href="$person.youtube_url">YouTube</a>
+				</div>
+				<div class="call">Call $pronoun now: <a href="tel:$person.phone">$person.phone</a></div>
+			</div>
+		</div>	
+		<div class="footer">
+			<div class="share">
+				<div class="fb">
+					<iframe src="//www.facebook.com/plugins/like.php?href=http://killkxl.com/$person.state/$person.lastname/&send=false&layout=button_count&width=450&show_faces=false&action=like&node_type=link&colorscheme=light&height=28&width=90&appId=120256554708686" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:28px;" allowTransparency="true"></iframe>
+				</div>			
+
+				<div class="twitter">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-text="Keystone XL must be stopped! Contact $person.title $person.lastname with killkxl.com #nokxl">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+

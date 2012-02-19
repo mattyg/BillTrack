@@ -1,0 +1,10 @@
+@media handheld {
+	html,body {
+		width: 500px;
+	}
+}
+@media Screen {
+	html,body {
+		width: 500px;
+	}
+}

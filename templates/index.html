@@ -1,0 +1,53 @@
+$def with (form, senatetotal, housetotal)
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kill Keystone XL -- How will your legislators vote on KXL?</title>
+		<link rel="stylesheet" type="text/css" href="/static/css/all.css" />
+		<script type="text/javascript">
+			function geolocate() {
+				if(navigator.geolocation) {
+					var position = navigator.geolocation.getCurrentPosition(function(position) {
+						var lat = position.coords.latitude;
+						var lon = position.coords.longitude;
+						window.location.href = '/district/of/'+lat+'/'+lon+'/';
+					});
+				} else {
+					document.getElementFromId("pagehead").innerHTML="";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="bighead">
+			Keystone XL Watch
+		</div>
+		<div class="message">
+			<p class="main">Congress is attempting to force a permit for the <a href="http://en.wikipedia.org/wiki/Keystone_XL#Keystone_XL_controversies">Keystone XL pipeline</a>, bypassing the legally required environmental impact statement and hearings in newly affected routes. This is an <a href="/faq/">urgent threat</a> to public democracy and saftey.<p>
+			<p class="votes"><span class="R">$senatetotal</span> Senators support S 2041</p>
+			<p class="votes"><span class="R">$housetotal</span> Representatives support HR 3811</p>
+			<table><tr><td>Consider this your call to action</td><td><a href="" class="button" onclick="geolocate();">Find your congress people now</a></td></tr></table>
+			<p class="stop">These bills must be stopped and we don't have much time left.</p>
+		</div>
+		<div class="lookup">Or lookup your legislators by Zip Code
+		<form name="main" method="post" action="/district/"> 
+			$if not form.valid: <p class="error">Enter a valid zip code.</p>
+			$:form.render()
+			<input type="submit" />
+		</form>
+		</div>
+		<div class="footer">
+			<div class="share">
+				<div class="fb">
+					<iframe src="//www.facebook.com/plugins/like.php?href=http://killkxl.com&send=false&layout=button_count&width=450&show_faces=false&action=like&node_type=link&colorscheme=light&height=28&width=90&appId=120256554708686"   scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:28px;" allowTransparency="true"></iframe>
+				</div>			
+
+				<div class="twitter">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-text="Keystone XL must be stopped! Contact your legislators with kxlwatch.org #nokxl">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
